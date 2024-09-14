@@ -8,17 +8,17 @@ Este projeto tem como objetivo desenvolver um modelo de predição para identifi
 
 1. **Coleta de Dados:** Os dados foram pré-processados para lidar com valores ausentes (imputação pela média) e padronizados. Foi realizada uma seleção de features utilizando a importância das variáveis fornecida pelo modelo Random Forest.
 
-2. **Pré-processamento:** Os dados foram pré-processados para lidar com valores ausentes Média, Valoes Nulos e Padronização ultilziando a função scale
+2. **Pré-processamento:** Os dados foram pré-processados para lidar com valores ausentes Média, Valoes Nulos e Padronização utilizando a função scale
 
-3. **Modelagem:** Um modelo de Random Forest foi treinado utilizando o algoritmo Random Forest
+3. **Modelagem:** Um modelo de Random Forest foi treinado utilizando a biblioteca Random Forest
 
-4. **Avaliação:** O modelo foi avaliado utilizando a técnica de cross-validation  de 5 folds. As métricas de acurácia, precisão, recall e F1-score Curva Roc calculadas.
+4. **Avaliação:** O modelo foi avaliado utilizando a técnica de cross-validation de 5 folds. As métricas de acurácia, precisão, recall e F1-score Curva Roc calculadas.
 
 **Modelagem**
 
-Um modelo de Random Forest foi treinado com os seguintes hiperparâmetros: 'mtry = c(2,3,4), `ntree = 10`. A cross-validation de 5 folds foi utilizada para avaliar o desempenho do modelo.
+Um modelo de Random Forest foi treinado com os seguintes hiperparâmetros: 'mtry = c(2,3,4), ntree = 10. A cross-validation de 5 folds foi utilizada para avaliar o desempenho do modelo.
 
-**Hiperparâmetros:** Utilizou-se o método de grid search para encontrar os melhores valores para `mtry` e `ntree`. O valor de `mtry = 3` foi escolhido, pois resultou na maior acurácia na validação cruzada.
+**Hiperparâmetros:** Utilizou-se o método de grid search para encontrar os melhores valores para mtry e ntree. O valor de mtry = 3 foi escolhido, pois resultou na maior acurácia na validação cruzada.
 
 **Resultados:**
 
